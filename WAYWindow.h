@@ -20,7 +20,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-/** This NSWindow subclass provides an interface to enable OS X 10.10 Yosemite exclusive features conveniently. Next to customizing the look of the WAYWindow content view, you can also customize the title bar and standard window buttons (`traffic lights´). The public interface is generally similar to INAppStoreWindow to facilitate the migration.
+/** This NSWindow subclass provides an interface to enable OS X 10.10 Yosemite exclusive features conveniently. Next to customizing the look of the WAYWindow content view, you can also customize the title bar and standard window buttons (`traffic lights´). The public interface is generally similar to INAppStoreWindow to simplify the migration.
  Whenever it makes sense, the properties of your WAYWindow instance in Interface Builder are inspectable.
  
  Tips:
