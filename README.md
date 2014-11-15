@@ -13,14 +13,14 @@ Tips:
  - Check out the WWDC '14 session "Adopting Advanced Features of the New UI of OS X Yosemite", which provides more details on how to make use of the new Yosemite APIs.
  - Also check out the new APIs in NSScrollView to make use of contentInsets, scrollInsets, and more.
 
-Many thanks to [http://twitter.com/indragie](@indragie) for his [INAppStoreWindow](https://github.com/indragiek/INAppStoreWindow/), which has been the inspiration for this class.
+Many thanks to [@indragie](http://twitter.com/indragie) for his [INAppStoreWindow](https://github.com/indragiek/INAppStoreWindow/), which has been the inspiration for this class.
 
 Usage
 -----
 
 1. Drag a new NSWindow instance to your XIB
 2. Set the class of the instance to WAYWindow
-3. Customize the properties via Interface Builder or programatically
+3. Customize the properties via Interface Builder or programmatically
 
 Example
 -------
@@ -31,7 +31,7 @@ Example
 Interesting
 -----------
 We are new, weAreYeah.com.
-Follow us on [http://twitter.com/weAreYeah](@weAreYeah) for upcoming goodies.
+Follow us on [@weAreYeah](http://twitter.com/weAreYeah) for upcoming goodies.
 
 License
 -------
