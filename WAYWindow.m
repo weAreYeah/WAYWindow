@@ -160,6 +160,7 @@ static float kWAYWindowDefaultTrafficLightButtonsTopMargin = 0;
 	} else {
 		[aView.superview replaceSubview:aView with:newView];
 	}
+	[self setNeedsLayout];
 }
 
 - (NSView *) replaceSubview:(NSView *)aView withViewOfClass:(Class)newViewClass {
