@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D06F6551A18C13600B725C6 /* WAYWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D06F6541A18C13600B725C6 /* WAYWindow.m */; };
+		4DF97AD11A17DA7700351BC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF97AD01A17DA7700351BC9 /* AppDelegate.m */; };
+		4DF97AD31A17DA7700351BC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF97AD21A17DA7700351BC9 /* main.m */; };
+		4DF97AD81A17DA7700351BC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF97AD61A17DA7700351BC9 /* MainMenu.xib */; };
+		4DF97AFA1A17F11900351BC9 /* calculatorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF97AF81A17F11900351BC9 /* calculatorIcon@2x.png */; };
+		4DF97AFB1A17F11900351BC9 /* viewIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF97AF91A17F11900351BC9 /* viewIcon@2x.png */; };
+		4DF97AFD1A17F1E600351BC9 /* dummyBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF97AFC1A17F1E600351BC9 /* dummyBackground@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D06F6531A18C13600B725C6 /* WAYWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAYWindow.h; sourceTree = "<group>"; };
+		4D06F6541A18C13600B725C6 /* WAYWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAYWindow.m; sourceTree = "<group>"; };
+		4DF97ACA1A17DA7700351BC9 /* WAYWindowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WAYWindowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF97ACE1A17DA7700351BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF97ACF1A17DA7700351BC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DF97AD01A17DA7700351BC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DF97AD21A17DA7700351BC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DF97AD71A17DA7700351BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4DF97AF81A17F11900351BC9 /* calculatorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculatorIcon@2x.png"; sourceTree = "<group>"; };
+		4DF97AF91A17F11900351BC9 /* viewIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viewIcon@2x.png"; sourceTree = "<group>"; };
+		4DF97AFC1A17F1E600351BC9 /* dummyBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dummyBackground@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DF97AC71A17DA7700351BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D06F6521A18C13600B725C6 /* WAYWindow */ = {
+			isa = PBXGroup;
+			children = (
+				4D06F6531A18C13600B725C6 /* WAYWindow.h */,
+				4D06F6541A18C13600B725C6 /* WAYWindow.m */,
+			);
+			path = WAYWindow;
+			sourceTree = SOURCE_ROOT;
+		};
+		4DF97AC11A17DA7700351BC9 = {
+			isa = PBXGroup;
+			children = (
+				4DF97ACC1A17DA7700351BC9 /* WAYWindowDemo */,
+				4DF97ACB1A17DA7700351BC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DF97ACB1A17DA7700351BC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DF97ACA1A17DA7700351BC9 /* WAYWindowDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DF97ACC1A17DA7700351BC9 /* WAYWindowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4D06F6521A18C13600B725C6 /* WAYWindow */,
+				4DF97ACF1A17DA7700351BC9 /* AppDelegate.h */,
+				4DF97AD01A17DA7700351BC9 /* AppDelegate.m */,
+				4DF97AF81A17F11900351BC9 /* calculatorIcon@2x.png */,
+				4DF97AF91A17F11900351BC9 /* viewIcon@2x.png */,
+				4DF97AFC1A17F1E600351BC9 /* dummyBackground@2x.png */,
+				4DF97AD61A17DA7700351BC9 /* MainMenu.xib */,
+				4DF97ACD1A17DA7700351BC9 /* Supporting Files */,
+			);
+			path = WAYWindowDemo;
+			sourceTree = "<group>";
+		};
+		4DF97ACD1A17DA7700351BC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DF97ACE1A17DA7700351BC9 /* Info.plist */,
+				4DF97AD21A17DA7700351BC9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DF97AC91A17DA7700351BC9 /* WAYWindowDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF97AE71A17DA7700351BC9 /* Build configuration list for PBXNativeTarget "WAYWindowDemo" */;
+			buildPhases = (
+				4DF97AC61A17DA7700351BC9 /* Sources */,
+				4DF97AC71A17DA7700351BC9 /* Frameworks */,
+				4DF97AC81A17DA7700351BC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WAYWindowDemo;
+			productName = WAYWindow;
+			productReference = 4DF97ACA1A17DA7700351BC9 /* WAYWindowDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DF97AC21A17DA7700351BC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "We Are Yeah!";
+				TargetAttributes = {
+					4DF97AC91A17DA7700351BC9 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DF97AC51A17DA7700351BC9 /* Build configuration list for PBXProject "WAYWindowDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DF97AC11A17DA7700351BC9;
+			productRefGroup = 4DF97ACB1A17DA7700351BC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DF97AC91A17DA7700351BC9 /* WAYWindowDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DF97AC81A17DA7700351BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF97AD81A17DA7700351BC9 /* MainMenu.xib in Resources */,
+				4DF97AFB1A17F11900351BC9 /* viewIcon@2x.png in Resources */,
+				4DF97AFA1A17F11900351BC9 /* calculatorIcon@2x.png in Resources */,
+				4DF97AFD1A17F1E600351BC9 /* dummyBackground@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DF97AC61A17DA7700351BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D06F6551A18C13600B725C6 /* WAYWindow.m in Sources */,
+				4DF97AD31A17DA7700351BC9 /* main.m in Sources */,
+				4DF97AD11A17DA7700351BC9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DF97AD61A17DA7700351BC9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DF97AD71A17DA7700351BC9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DF97AE51A17DA7700351BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4DF97AE61A17DA7700351BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4DF97AE81A17DA7700351BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/WAYWindowDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = WAYWindowDemo;
+			};
+			name = Debug;
+		};
+		4DF97AE91A17DA7700351BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/WAYWindowDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = WAYWindowDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DF97AC51A17DA7700351BC9 /* Build configuration list for PBXProject "WAYWindowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF97AE51A17DA7700351BC9 /* Debug */,
+				4DF97AE61A17DA7700351BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF97AE71A17DA7700351BC9 /* Build configuration list for PBXNativeTarget "WAYWindowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF97AE81A17DA7700351BC9 /* Debug */,
+				4DF97AE91A17DA7700351BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DF97AC21A17DA7700351BC9 /* Project object */;
+}
