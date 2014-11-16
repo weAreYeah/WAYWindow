@@ -22,6 +22,9 @@ Usage
 2. Set the class of the instance to WAYWindow
 3. Customize the properties via Interface Builder or programmatically
 
+**Note: You should probably consider using [WAYAppStoreWindow](https://github.com/weAreYeah/WAYAppStoreWindow/) instead of this class directly!**
+
+
 Example
 -------
 
