@@ -118,7 +118,7 @@ static float kWAYWindowDefaultTrafficLightButtonsTopMargin = 0;
 	if (![WAYWindow supportsVibrantAppearances])
 		return;
 	
-	NSVisualEffectView *newContentView = [self replaceSubview:self.contentView withViewOfClass:[NSVisualEffectView class]];
+	NSVisualEffectView *newContentView = (NSVisualEffectView *)[self replaceSubview:self.contentView withViewOfClass:[NSVisualEffectView class]];
 	[newContentView setMaterial:material];
 	[self setContentView:newContentView];
 }

@@ -6,15 +6,19 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D7D9DF91-EC69-454D-809B-D007E8C6135B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WAYWindowDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C1421C99D055D3A535089DA2BBEC5EFC9A0200F0</key>
 		<string>https://github.com/weAreYeah/WAYWindow.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WAYWindowDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C1421C99D055D3A535089DA2BBEC5EFC9A0200F0</key>
-		<string>WAYWindow/</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/weAreYeah/WAYWindow.git</string>
