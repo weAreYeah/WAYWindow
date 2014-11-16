@@ -156,6 +156,7 @@ static float kWAYWindowDefaultTrafficLightButtonsTopMargin = 0;
 	NSView *view = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 10, titleBarHeight-[WAYWindow defaultTitleBarHeight])];
 	_dummyTitlebarAccessoryViewController = [NSTitlebarAccessoryViewController new];
 	_dummyTitlebarAccessoryViewController.view = view;
+	_dummyTitlebarAccessoryViewController.fullScreenMinHeight = titleBarHeight;
 	[self addTitlebarAccessoryViewController:_dummyTitlebarAccessoryViewController];
 	
 	NSRect frame = self.frame;
