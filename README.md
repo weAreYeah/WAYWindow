@@ -15,6 +15,12 @@ Tips:
 
 Many thanks to [@indragie](http://twitter.com/indragie) for his [INAppStoreWindow](https://github.com/indragiek/INAppStoreWindow/), which has been the inspiration for this class.
 
+Example
+-------
+
+![WAYWindow](WAYWindow%20Example.png)
+
+
 Usage
 -----
 
@@ -24,11 +30,6 @@ Usage
 
 **Note: You should probably consider using [WAYAppStoreWindow](https://github.com/weAreYeah/WAYAppStoreWindow/) instead of this class directly!**
 
-
-Example
--------
-
-![WAYWindow](WAYWindow%20Example.png)
 
 
 Interesting
