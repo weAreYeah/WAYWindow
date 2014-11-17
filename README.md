@@ -1,7 +1,7 @@
 WAYWindow
 =========
 
-NSWindow subclass that simplifies Yosemite exclusive features:
+```NSWindow``` subclass that simplifies Yosemite exclusive features:
 
  - custom titlebar height
  - custom traffic lights margings
@@ -9,14 +9,14 @@ NSWindow subclass that simplifies Yosemite exclusive features:
  - and more
 
 This NSWindow subclass provides an interface to enable OS X 10.10 Yosemite exclusive features conveniently.
-Next to customizing the look of the WAYWindow content view, you can also customize the title bar and standard window buttons ('traffic lights').
-The public interface is generally similar to INAppStoreWindow to facilitate the migration.
-Whenever it makes sense, the properties of your WAYWindow instance in Interface Builder are inspectable.
+Next to customizing the look of the ```WAYWindow``` content view, you can also customize the title bar and standard window buttons ('traffic lights').
+The public interface is generally similar to ```INAppStoreWindow``` to facilitate the migration.
+Whenever it makes sense, the properties of your ```WAYWindow``` instance in Interface Builder are inspectable.
 
 
 Tips:
  - Check out the WWDC '14 session "Adopting Advanced Features of the New UI of OS X Yosemite", which provides more details on how to make use of the new Yosemite APIs.
- - Also check out the new APIs in NSScrollView to make use of contentInsets, scrollInsets, and more.
+ - Also check out the new APIs in ```NSScrollView``` to make use of contentInsets, scrollInsets, and more.
 
 Many thanks to [@indragie](http://twitter.com/indragie) for his [INAppStoreWindow](https://github.com/indragiek/INAppStoreWindow/), which has been the inspiration for this class.
 
@@ -29,8 +29,8 @@ Example
 Usage
 -----
 
-1. Drag a new NSWindow instance to your XIB
-2. Set the class of the instance to WAYWindow
+1. Drag a new ```NSWindow``` instance to your XIB
+2. Set the class of the instance to ```WAYWindow```
 3. Customize the properties via Interface Builder or programmatically
 
 **Note: You should probably consider using [WAYAppStoreWindow](https://github.com/weAreYeah/WAYAppStoreWindow/) instead of this class directly!**
@@ -44,7 +44,9 @@ Follow us on [@weAreYeah](http://twitter.com/weAreYeah) for upcoming goodies.
 
 License
 -------
+
 Licensed under the BSD License <http://www.opensource.org/licenses/bsd-license>
+
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
 EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
 OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
