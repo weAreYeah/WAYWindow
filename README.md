@@ -1,7 +1,12 @@
 WAYWindow
 =========
 
-NSWindow subclass that simplifies Yosemite exclusive features.
+NSWindow subclass that simplifies Yosemite exclusive features:
+
+ - custom titlebar height
+ - custom traffic lights margings
+ - simplified NSAppearance switching
+ - and more
 
 This NSWindow subclass provides an interface to enable OS X 10.10 Yosemite exclusive features conveniently.
 Next to customizing the look of the WAYWindow content view, you can also customize the title bar and standard window buttons ('traffic lights').
