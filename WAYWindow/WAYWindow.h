@@ -44,6 +44,9 @@
 /// Defines the left margin of the standard window buttons. Defaut: OS X default value.
 @property (nonatomic) IBInspectable CGFloat trafficLightButtonsLeftMargin;
 
+/// Defines the top margin of the standard window buttons. Used if not centered. Defaut: OS X default value.
+@property (nonatomic) IBInspectable CGFloat trafficLightButtonsTopMargin;
+
 /// If set to YES, the title of the window will be hidden. Default: YES.
 @property (nonatomic) IBInspectable BOOL hidesTitle;
 
