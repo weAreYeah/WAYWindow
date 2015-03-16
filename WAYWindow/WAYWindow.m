@@ -20,6 +20,53 @@
 
 #import "WAYWindow.h"
 
+/** 
+ Convenience methods to make NSPointerArray act like a stack of selectors. It would be a subclass, but NSPointerArray
+ is a class cluster and doesn't really like being subclassed.
+ */
+#pragma mark - WAY_SelectorStack
+@interface NSPointerArray (WAY_SelectorStack)
+- (instancetype)initWAYSelectorStack;
+- (BOOL)way_containsSelector:(SEL)aSelector;
+- (void)way_pushSelector:(SEL)aSelector;
+- (SEL)way_pop;
+@end
+
+@implementation NSPointerArray (WAY_SelectorStack)
+- (instancetype)initWAYSelectorStack {
+	NSPointerFunctions *pointerFunctions = [NSPointerFunctions pointerFunctionsWithOptions:(NSPointerFunctionsOpaqueMemory |
+																							NSPointerFunctionsOpaquePersonality)];
+	self = [self initWithPointerFunctions:pointerFunctions];
+	return self;
+}
+
+- (BOOL)way_containsSelector:(SEL)aSelector {
+	NSInteger count = self.count;
+	for (NSInteger i=0; i<count; ++i) {
+		SEL sel = [self pointerAtIndex:i];
+		if (aSelector == sel) {
+			return YES;
+		}
+	}
+	return NO;
+}
+- (void)way_pushSelector:(SEL)aSelector {
+	[self addPointer:aSelector];
+}
+
+- (SEL)way_pop {
+	NSInteger index = self.count - 1;
+	SEL theSel = [self pointerAtIndex:index];
+	[self removePointerAtIndex:index];
+	return theSel;
+}
+
+@end
+
+
+
+
+
 @interface WAYWindowDelegateProxy : NSProxy <NSWindowDelegate>
 @property (nonatomic, weak) id<NSWindowDelegate> secondaryDelegate;
 @property (nonatomic, weak) id<NSWindowDelegate> firstDelegate;
@@ -27,7 +74,14 @@
 
 /** Since the window needs to update itself at specific events, e.g., windowDidResize:;, we need to set the window as its own delegate. To allow proper window delegates as usual, we need to make use of a proxy object, which forwards all method invovations first to the WAYWindow instance, and then to the real delegate. */
 #pragma mark - WAYWindowDelegateProxy
-@implementation WAYWindowDelegateProxy
+@implementation WAYWindowDelegateProxy {
+	NSPointerArray *_selectorStack;
+}
+
+- (instancetype)init {
+	_selectorStack = [[NSPointerArray alloc] initWAYSelectorStack];
+	return self;
+}
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
 	NSMethodSignature *signature = [[self.firstDelegate class] instanceMethodSignatureForSelector:selector];
@@ -51,12 +105,22 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-	if ([self.firstDelegate respondsToSelector:anInvocation.selector]) {
-		[anInvocation invokeWithTarget:self.firstDelegate];
+	SEL selector = anInvocation.selector;
+	if ([_selectorStack way_containsSelector:selector]) {
+		// We're already in the middle of forwarding this selector; stop the infinite recursion right here.
+		return;
 	}
-	if ([self.secondaryDelegate respondsToSelector:anInvocation.selector]) {
-		[anInvocation invokeWithTarget:self.secondaryDelegate];
+	
+	[_selectorStack way_pushSelector:selector];
+	{
+		if ([self.firstDelegate respondsToSelector:selector]) {
+			[anInvocation invokeWithTarget:self.firstDelegate];
+		}
+		if ([self.secondaryDelegate respondsToSelector:selector]) {
+			[anInvocation invokeWithTarget:self.secondaryDelegate];
+		}
 	}
+	[_selectorStack way_pop];
 }
 
 - (BOOL)isKindOfClass:(Class)aClass {
@@ -241,7 +305,7 @@ static float kWAYWindowDefaultTrafficLightButtonsTopMargin = 0;
 #pragma mark - Private
 
 - (void) _setUp {
-	_delegateProxy = [WAYWindowDelegateProxy alloc];
+	_delegateProxy = [[WAYWindowDelegateProxy alloc] init];
 	_delegateProxy.firstDelegate = self;
 	super.delegate = _delegateProxy;
 	
