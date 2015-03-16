@@ -36,7 +36,7 @@
 @property (nonatomic) IBInspectable CGFloat titleBarHeight;
 
 //// Returns the titlebar view of the window, which you can add arbitrary subviews to.
-@property (strong,readonly) NSView *titleBarView;
+@property (strong,readonly) IBOutlet NSView *titleBarView;
 
 /// If set to YES, the standard window button will be vertically centered. Default: YES.
 @property (nonatomic) IBInspectable BOOL centerTrafficLightButtons;
